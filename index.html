@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNDER CONSTRUCTION!</title>
+    <link rel="icon" href="media/pudding.jpg">
+    <link rel="stylesheet" href="stylesheet.css"> 
+    <meta property="og:image" content="media/pudding.jpg">
+    <meta property="og:title" content="UNDER CONSTRSURCTINON!!!1">		
+</head>
+
+ 
+    <input class="pudding" type="image" src="media/pudding.jpg" title="Pudding... :3">
+    <h1 style="color: white; text-align: center;">UNDER CONSTRUCTION!</h1>
+    <h2 style="color: white; text-align: center;">CLICK ON PUDDING IN THE MEANTIME FOR A SURPRISE!!!</h2>
+
+
+<script>
+const farts = ['media/short.mp3', 'media/wet.mp3'];
+const laugh = ['media/laugh.mp3']
+let fartcount = 0;
+
+document.getElementsByClassName("pudding")[0].addEventListener("click", () => {
+    new Audio(farts[fartcount]).play(); 
+    fartcount = (fartcount + 1) % farts.length;
+        setTimeout(() => {
+        new Audio(laugh).play();
+}, 700);
+});
+</script>

@@ -1,0 +1,22 @@
+input.pudding{
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display:block; margin:auto; border: 5px dotted #ffff;
+
+}
+
+input.pudding:hover {
+    transition: width 5s;
+   width: 800px;
+   margin:auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+body {
+    background-color: black;
+}
